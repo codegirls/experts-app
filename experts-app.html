@@ -5,6 +5,14 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
+  <form class="new-expert">
+    <input type="text" name="name" placeholder="Who is it?" />
+    <input type="url" name="image" />
+    <input type="text" name="abilities" placeholder="What are they good at?" />
+    <input type="email" name="contact" placeholder="awwww@so.me" />
+    <input type="submit" />
+  </form>
+
   <ul>
     {{#each experts}}
       {{> expert}}
