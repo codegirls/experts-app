@@ -1,23 +1,17 @@
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
-
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
-  });
-
-  Template.hello.events({
-    'click #clickme': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-
-  Template.goodbye.events({
-    'click button': function() {
-      Session.set('counter', 0);
-    }
+  Template.body.helpers({
+    experts: [
+      // name, image, abilities, contact
+      {name: "Jane",
+       image: "http://www.rodalesorganiclife.com/sites/rodalesorganiclife.com/files/wolly-bear-caterpillar-400.jpg",
+       abilities: ["java", "html", "cooking", "whistle"],
+       contact: "jane@doe.com"
+      },
+      {name: "Tarzana",
+       image: "http://t00.deviantart.net/9bzMvL9HcA47X8eEPn7FWBV7D-A=/fit-in/300x900/filters:no_upscale():origin()/pre01/05f9/th/pre/f/2014/016/1/0/tarzan_and_numa_by_bumpman321-d72h2p8.jpg",
+       abilities: ["swinging", "screaming", "dancing"],
+       contact: "scream@thejung.le",
+      },
+    ],
   });
 }
