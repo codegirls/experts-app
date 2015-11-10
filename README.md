@@ -16,7 +16,7 @@ After a while it will display "=> App running at: http://localhost:3000/"
 and you can visit <http://localhost:3000> in your browser to see the
 app running.
 
-(**Don't close the terminal**, or your server won't be stopped.  Only
+(**Don't close the terminal**, or your server will be stopped.  Only
 close the terminal *after* you're done and always remember to start
 it before starting to edit the files of the app.)
 
